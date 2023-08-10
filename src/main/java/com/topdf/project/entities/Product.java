@@ -1,6 +1,5 @@
 package com.topdf.project.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,15 +14,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "EMPLOYEEDB")
-public class Employee {
+@Table(name = "ProductTbl")
+public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	@Column(name ="FIRST_NAME")
-	private String firstName;
-	@Column(name ="LAST_NAMEE")
-	private String lastName;
-	// Other fields, getters, setters
+
+	private String name;
+	private String description;
+	private double price;
 }

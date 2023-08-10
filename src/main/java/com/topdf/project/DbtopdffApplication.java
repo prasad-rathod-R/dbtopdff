@@ -8,6 +8,7 @@ public class DbtopdffApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DbtopdffApplication.class, args);
+		System.out.println("started");
 	}
 
 }
