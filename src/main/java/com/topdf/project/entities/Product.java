@@ -1,5 +1,6 @@
 package com.topdf.project.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,4 +24,5 @@ public class Product {
 	private String name;
 	private String description;
 	private double price;
+
 }
